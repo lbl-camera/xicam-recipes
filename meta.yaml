@@ -1,0 +1,60 @@
+package:
+  name: xi-cam-tomo
+  version: 1.2.21
+
+source:
+  git_url: https://github.com/ronpandolfi/Xi-cam.git
+  git_tag: tomo-conda
+
+
+build:
+    osx_is_app: False
+    entry_points:
+        - xicam = xicamlauncher.main:main
+    skip_compile_pyc:
+        - buildapp.py
+        - buildexe.py
+        - run_xicam.py
+        - setup.py
+        - test.py
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - cython
+
+  run:
+    - scipy
+    - cython
+    - h5py
+    - shiboken
+    - pyside
+    - pyqtgraph
+    - pillow
+    - pyopengl
+    - pyyaml
+    - requests
+    - dask
+    - distributed
+    - appdirs
+    - futures
+    - numpy
+    - matplotlib
+    - setuptools
+    - numexpr
+    - six
+    - ipython
+    - paramiko
+    - tornado
+    - psutil
+    - scikit-image 
+    - imageio
+    - vispy
+    - qtconsole
+    - tomopy
+    
+about:
+  home: https://github.com/ronpandolfi/Xi-cam
+  summary: Xi-cam build for Synchrotron tomography reconstruction
