@@ -1,6 +1,6 @@
 package:
-  name: xi-cam-tomo
-  version: 1.2.21
+  name: xicam-tomo
+  version: 1.2.22
 
 source:
   git_url: https://github.com/ronpandolfi/Xi-cam.git
@@ -36,23 +36,20 @@ requirements:
     - pyopengl
     - pyyaml
     - requests
-    - dask
-    - distributed
     - appdirs
     - futures
     - numpy
-    - matplotlib
     - setuptools
     - numexpr
     - six
     - ipython
-    - paramiko
-    - tornado
     - psutil
-    - scikit-image 
     - imageio
     - vispy
+    - tifffile
+    - pysftp
     - qtconsole
+    - qt==4.8.7
     - tomopy
     
 about:
