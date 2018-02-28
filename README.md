@@ -4,8 +4,9 @@ Preperation:
 ------------
 1. Make sure xicam works with anaconda
 2. Add conda-forge to channels
-`conda install conda-build`
-3. Install anconda-client (optional)
+`conda config --add conda-forge`
+3. `conda install conda-build`
+4. Install anconda-client (optional)
 `conda install anaconda-client`
 
 Build
