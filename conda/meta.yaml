@@ -1,10 +1,10 @@
 package:
-  name: xicam-tomo
-  version: 1.2.22
+  name: xicam-saxs
+  version: 1.2.21
 
 source:
   git_url: https://github.com/ronpandolfi/Xi-cam.git
-  git_tag: tomo-conda
+  git_tag: saxs-conda
 
 
 build:
@@ -31,6 +31,8 @@ requirements:
     - h5py
     - shiboken
     - pyside
+    - pyfai
+    - fabio
     - pyqtgraph
     - pillow
     - pyopengl
@@ -49,9 +51,8 @@ requirements:
     - tifffile
     - pysftp
     - qtconsole
-    - qt==4.8.7
-    - tomopy
+    - qt 4.8.7*
     
 about:
   home: https://github.com/ronpandolfi/Xi-cam
-  summary: Xi-cam build for Synchrotron tomography reconstruction
+  summary: Xi-cam build for Synchrotron (GI)SAXS analysis
