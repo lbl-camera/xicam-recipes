@@ -8,7 +8,7 @@ source:
 
 
 build:
-    osx_is_app: False
+    osx_is_app: True
     entry_points:
         - xicam = xicamlauncher.main:main
     skip_compile_pyc:
@@ -30,7 +30,8 @@ requirements:
     - cython
     - h5py
     - shiboken
-    - pyside
+    - pyside 1.2.4
+    - scikit-image
     - pyfai
     - fabio
     - pyqtgraph
