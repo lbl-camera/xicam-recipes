@@ -8,7 +8,7 @@ source:
 
 
 build:
-    osx_is_app: True
+    osx_is_app: False
     entry_points:
         - xicam = xicamlauncher.main:main
     skip_compile_pyc:
